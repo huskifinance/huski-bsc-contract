@@ -1,0 +1,598 @@
+{
+  "AdminAddress": "0x3583Fa30Dd165B339f34B965CA25B58470C5e343",
+  "NativeAddress": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+  "FeederAddress": "0x3583Fa30Dd165B339f34B965CA25B58470C5e343",
+  "ProxyAdmin": "0x6e91780a46C8b6Ab7b1716BDa6D131dEFa41E57f",
+  "Timelock": "0x7Bf9BF6afc553B89a29D942cE187d9A545be116D",
+  "Shield": "",
+  "MerkleDistributor": {
+    "ITAM-week-1": "",
+    "ITAM-week-2": "",
+    "ITAM-week-3": "",
+    "ITAM-week-4": ""
+  },
+  "GrazingRange": {
+    "address": "",
+    "pools": []
+  },
+  "FairLaunch": {
+    "address": "0xf222d118F8f3261b764c05AC5e378f65703CF91f",
+    "pools": [
+      {
+        "id": 0,
+        "stakingToken": "debtibBUSD",
+        "address": "0xd8988c77D3b25aEE097F52a24AD93e18A4dc71cD"
+      },
+      {
+        "id": 1,
+        "stakingToken": "ibBUSD",
+        "address": "0xf846fa18682f985138cE43BCC6F989B6eD69bc81"
+      },
+      {
+        "id": 2,
+        "stakingToken": "debtibBNB",
+        "address": "0x57dA3b0A8EDDD4CE8B5b8c1C25C4AC80F1d10FDE"
+      },
+      {
+        "id": 3,
+        "stakingToken": "ibBNB",
+        "address": "0xcc1477f75872876673Fbdf6829Cd89dfe9455956"
+      },
+      {
+        "id": 4,
+        "stakingToken": "debtibUSDT",
+        "address": "0x8D9Df54d00146a182283fd8eA52bf462c6d0B193"
+      },
+      {
+        "id": 5,
+        "stakingToken": "ibUSDT",
+        "address": "0xbD91429B7546AFe01c2CC4a4587bBB2E66302534"
+      },
+      {
+        "id": 6,
+        "stakingToken": "debtibETH",
+        "address": "0x9f6bcefea7c0f53077c7932785e79a0afde5ed89"
+      },
+      {
+        "id": 8,
+        "stakingToken": "ibETH",
+        "address": "0x85549eac2c801dbd20964f7f6248f9ed32bd4efb"
+      },
+      {
+        "id": 9,
+        "stakingToken": "debtibBTCB",
+        "address": "0xADef0dBa9671eb0A63330f35c70Ed1C40E8A9dDd"
+      },
+      {
+        "id": 10,
+        "stakingToken": "ibBTCB",
+        "address": "0x5E33c3D92310135973A70cb02E24e8a116a20052"
+      },
+      {
+        "id": 11,
+        "stakingToken": "debtibUSDC",
+        "address": "0x2a81f574ae37a8f5d534746dc24ae91af7f5b9d7"
+      },
+      {
+        "id": 12,
+        "stakingToken": "ibUSDC",
+        "address": "0xe363355790cfc313f5ab1939155356e72bf662fb"
+      }
+    ]
+  },
+  "Exchanges": {
+    "Pancakeswap": {
+      "UniswapV2Factory": "0xBCfCcbde45cE874adCB698cC183deBcF17952812",
+      "UniswapV2Router02": "0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F",
+      "FactoryV2": "0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73",
+      "RouterV2": "0x10ED43C718714eb63d5aA57B78B54704E256024E",
+      "MasterChef": "0x73feaa1eE314F8c655E354234017bE2193C9E24E",
+      "LpTokens": [
+        {
+          "pId": 251,
+          "name": "CAKE-WBNB LP",
+          "address": "0x0eD7e52944161450477ee417DE9Cd3a859b14fD0"
+        },
+        {
+          "pId": 262,
+          "name": "BTCB-WBNB LP",
+          "address": "0x61EB789d75A95CAa3fF50ed7E47b96c132fEc082"
+        },
+        {
+          "pId": 261,
+          "name": "ETH-WBNB LP",
+          "address": "0x74E4716E431f45807DCF19f284c7aA99F18a4fbc"
+        },
+        {
+          "pId": 258,
+          "name": "USDT-BUSD LP",
+          "address": "0x7EFaEf62fDdCCa950418312c6C91Aef321375A00"
+        },
+        {
+          "pId": 252,
+          "name": "WBNB-BUSD LP",
+          "address": "0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16"
+        },
+        {
+          "pId": 255,
+          "name": "DOT-WBNB LP",
+          "address": "0xDd5bAd8f8b360d76d12FdA230F8BAF42fe0022CF"
+        },
+        {
+          "pId": 268,
+          "name": "UNI-WBNB LP",
+          "address": "0x014608E87AF97a054C9a49f81E1473076D51d9a3"
+        },
+        {
+          "pId": 257,
+          "name": "LINK-WBNB LP",
+          "address": "0x824eb9faDFb377394430d2744fa7C42916DE3eCe"
+        },
+        {
+          "pId": 260,
+          "name": "XVS-WBNB LP",
+          "address": "0x7EB5D86FD78f3852a3e0e064f2842d45a3dB6EA2"
+        },
+        {
+          "pId": 267,
+          "name": "YFI-WBNB LP",
+          "address": "0xCE383277847f8217392eeA98C5a8B4a7D27811b0"
+        },
+        {
+          "pId": 276,
+          "name": "VAI-BUSD LP",
+          "address": "0x133ee93FE93320e1182923E1a640912eDE17C90C"
+        },
+        {
+          "pId": 283,
+          "name": "USDC-BUSD LP",
+          "address": "0x2354ef4DF11afacb85a5C7f98B624072ECcddbB1"
+        },
+        {
+          "pId": 282,
+          "name": "DAI-BUSD LP",
+          "address": "0x66FDB2eCCfB58cF098eaa419e5EfDe841368e489"
+        },
+        {
+          "pId": 293,
+          "name": "UST-BUSD LP",
+          "address": "0x05faf555522Fa3F93959F86B41A3808666093210"
+        },
+        {
+          "pId": 300,
+          "name": "COMP-ETH LP",
+          "address": "0x37908620dEf1491Dd591b5a2d16022A33cDDA415"
+        },
+        {
+          "pId": 306,
+          "name": "SUSHI-ETH LP",
+          "address": "0x16aFc4F2Ad82986bbE2a4525601F8199AB9c832D"
+        },
+        {
+          "pId": 348,
+          "name": "ITAM-WBNB LP",
+          "address": "0xd02DA76c813b9cd4516eD50442923E625f90228f"
+        },
+        {
+          "pId": 362,
+          "name": "ALPACA-BUSD LP",
+          "address": "0x7752e1FA9F3a2e860856458517008558DEb989e3"
+        },
+        {
+          "pId": 365,
+          "name": "BTCB-BUSD LP",
+          "address": "0xF45cd219aEF8618A92BAa7aD848364a158a24F33"
+        },
+        {
+          "pId": 310,
+          "name": "bMXX-WBNB LP",
+          "address": "0xc20A92a1424b29b78DFaF92FD35D4cf8A06419B4"
+        },
+        {
+          "pId": 318,
+          "name": "BELT-WBNB LP",
+          "address": "0xF3Bc6FC080ffCC30d93dF48BFA2aA14b869554bb"
+        },
+        {
+          "pId": 308,
+          "name": "BOR-WBNB LP",
+          "address": "0xe094c686aD6cDda57b9564457F541FBF099B948A"
+        },
+        {
+          "pId": 303,
+          "name": "BRY-WBNB LP",
+          "address": "0x21dD71aB78EDE3033c976948f769D506E4F489eE"
+        },
+        {
+          "pId": 333,
+          "name": "pCWS-WBNB LP",
+          "address": "0x6615CE60D71513aA4849269dD63821D324A23F8C"
+        },
+        {
+          "pId": 304,
+          "name": "SWINGBY-WBNB LP",
+          "address": "0x4Fd6D315bEf387fAD2322fbc64368fC443F0886D"
+        },
+        {
+          "pId": 305,
+          "name": "DODO-WBNB LP",
+          "address": "0xA9986Fcbdb23c2E8B11AB40102990a08f8E58f06"
+        },
+        {
+          "pId": 264,
+          "name": "USDT-WBNB LP",
+          "address": "0x16b9a82891338f9bA80E2D6970FddA79D1eb0daE"
+        },
+        {
+          "pId": 389,
+          "name": "CAKE-BUSD LP",
+          "address": "0x804678fa97d91B974ec2af3c843270886528a9E6"
+        }
+      ]
+    }
+  },
+  "Tokens": {
+    "HUSKY": "0x8fC25dffbE250b5c17e9e3439f167bc03DBB4E2f",
+    "WBNB": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+    "ALPACA": "0x8F0528cE5eF7B51152A59745bEfDD91D97091d2F",
+    "sALPACA": "0x6F695Bd5FFD25149176629f8491A5099426Ce7a7",
+    "BUSD": "0xe9e7cea3dedca5984780bafc599bd69add087d56",
+    "CAKE": "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82",
+    "SYRUP": "0x009cf7bc57584b7998236eff51b98a168dcea9b0",
+    "USDT": "0x55d398326f99059ff775485246999027b3197955",
+    "BTCB": "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c",
+    "ETH": "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
+    "DOT": "0x7083609fce4d1d8dc0c979aab8c869ea2c873402",
+    "UNI": "0xbf5140a22578168fd562dccf235e5d43a02ce9b1",
+    "LINK": "0xf8a0bf9cf54bb92f17374d9e9a321e6a111a51bd",
+    "XVS": "0xcf6bb5389c92bdda8a3747ddb454cb7a64626c63",
+    "YFI": "0x88f1a5ae2a3bf98aeaf342d26b30a79438c9142e",
+    "VAI": "0x4bd17003473389a42daf6a0a729f6fdb328bbbd7",
+    "USDC": "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+    "DAI": "0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3",
+    "UST": "0x23396cf899ca06c4472205fc903bdb4de249d6fc",
+    "BETH": "0x250632378e573c6be1ac2f97fcdf00515d0aa91b",
+    "COMP": "0x52ce071bd9b1c4b00a0b92d298c512478cad67e8",
+    "SUSHI": "0x947950bcc74888a40ffa2593c5798f11fc9124c4",
+    "ITAM": "0x04c747b40be4d535fc83d09939fb0f626f32800b",
+    "bMXX": "0x4131b87F74415190425ccD873048C708F8005823",
+    "BELT": "0xE0e514c71282b6f4e823703a39374Cf58dc3eA4f",
+    "BOR": "0x92D7756c60dcfD4c689290E8A9F4d263b3b32241",
+    "BRY": "0xf859Bf77cBe8699013d6Dbc7C2b926Aaf307F830",
+    "pCWS": "0xbcf39F0EDDa668C58371E519AF37CA705f2bFcbd",
+    "SWINGBY": "0x71de20e0c4616e7fcbfdd3f875d568492cbe4739",
+    "DODO": "0x67ee3cb086f8a16f34bee3ca72fad36f7db929e2",
+    "WEX": "0xa9c41A46a6B3531d28d5c32F6633dd2fF05dFB90",
+    "BORING": "0xffEecbf8D7267757c2dc3d13D730E97E15BfdF7F",
+    "WAULTx": "0xb64e638e60d154b43f660a6bf8fd8a3b249a6a21",
+    "ODDZ": "0xcd40f2670cf58720b694968698a5514e924f742d",
+    "ADA": "0x3ee2200efb3400fabb9aacf31297cbdd1d435d47",
+    "FORM": "0x25A528af62e56512A19ce8c3cAB427807c28CC19",
+    "MATIC": "0xcc42724c6683b7e57334c4e856f4c9965ed682bd",
+    "TUSD": "0x14016e85a25aeb13065688cafb43044c2ef86784",
+    "TRX": "0x85eac5ac2f758618dfa09bdbe0cf174e7d574d5b",
+    "BTT": "0x8595f9da7b868b1822194faed312235e43007b49",
+    "ORBS": "0xebd49b26169e1b52c04cfd19fcf289405df55f80",
+    "AXS": "0x715D400F88C167884bbCc41C5FeA407ed4D2f8A0",
+    "PMON": "0x1796ae0b0fa4862485106a0de9b654efe301d0b2",
+    "PHA": "0x0112e557d400474717056c4e6d40edd846f38351",
+    "WUSD": "0x3fF997eAeA488A082fb7Efc8e6B9951990D0c3aB",
+    "ALM": "0x7c38870e93a1f959cb6c533eb10bbc3e438aac11",
+    "KALA": "0x32299c93960bb583a43c2220dc89152391a610c5",
+    "SCIX": "0x2cfc48cdfea0678137854f010b5390c5144c0aa5",
+    "NAOS": "0x758d08864fb6cce3062667225ca10b8f00496cc2",
+    "MBOX": "0x3203c9e46ca618c8c1ce5dc67e7e9d75f5da2377",
+    "MDX": "0x9c65ab58d8d978db963e63f2bfb7121627e3a739",
+    "DVI": "0x758fb037a375f17c7e195cc634d77da4f554255b"
+  },
+  "LpTokens": {
+    "HUSKY-WBNB": "",
+    "HUSKY-WBNB (Legacy)": "",
+    "sHUSKY-HUSKY": ""
+  },
+  "SharedStrategies": {
+    "StrategyAddBaseTokenOnly": "0x7F7B586fEb621b4E27aF8613E6711ccE8c35c723",
+    "StrategyLiquidate": "0x42295852D39652C72d529191269AE5c08C2816AA",
+    "StrategyWithdrawMinimizeTrading": "0x11Ab00C973D796E9e444A4b2B7482D0839AE631a",
+    "StrategyPartialCloseLiquidate": "0x2cDe26B0a8f4975b1beC5219D1ceCfF7e2364B76",
+    "StrategyPartialCloseMinimizeTrading": "0x74346297Bf66fc0C20B75b72e4baB434D1c239b8"
+  },
+  "SharedConfig": {
+    "TripleSlopeModel": "0x849cef17F70b3079fa794184F3EA6ce318176576",
+    "LowInterestTripleSlopeModel": "0x99aaA89Ecd9a5ECC1aD2a744812C137A9c92C548",
+    "HighInterestTripleSlopeModel": "0x8324f1d77571977d202268E0153f9908fCfA6062",
+    "TripleSlopeModelStable20Max150": "",
+    "WNativeRelayer": "0xf5F2EEf3145A5c9F4F4DD5977451ef6a20922049",
+    "WorkerConfig": "0x814009F444570ed2915a223e2cAcf955266048c9"
+  },
+  "Oracle": {
+    "SimpleOracle": "0x2b2d8a62076B4CbfaD131dc753903765a34bcA14"
+  },
+  "Vaults": [
+    {
+      "name": "",
+      "symbol": "",
+      "address": "",
+      "baseToken": "",
+      "debtToken": "",
+      "config": "",
+      "tripleSlopeModel": "",
+      "StrategyAddTwoSidesOptimal": "",
+      "workers": []
+    },
+    {
+      "name": "Interest Bearing HUSKI",
+      "symbol": "ibHUSKI",
+      "address": "",
+      "baseToken": "",
+      "debtToken": "",
+      "config": "0x63d077B0C5FBa82BdFBCd7b998153dE80ED462B1",
+      "tripleSlopeModel": "0x8324f1d77571977d202268E0153f9908fCfA6062",
+      "StrategyAddTwoSidesOptimal": "",
+      "workers": []
+    },
+    {
+      "name": "Interest Bearing BUSD",
+      "symbol": "ibBUSD",
+      "address": "0xf846fa18682f985138cE43BCC6F989B6eD69bc81",
+      "baseToken": "0xe9e7cea3dedca5984780bafc599bd69add087d56",
+      "debtToken": "0xd8988c77D3b25aEE097F52a24AD93e18A4dc71cD",
+      "config": "0x2BE54c7feA2b0aF959a25B740d701eAa564Aa838",
+      "tripleSlopeModel": "0x8324f1d77571977d202268E0153f9908fCfA6062",
+      "StrategyAddTwoSidesOptimal": "0xa6684140D9DbfBfd78f8116B5A35d03affE05353",
+      "workers": [
+        {
+          "name": "CAKE-BUSD Worker",
+          "address": "0x4B7Ef76C065beE6b392bA1D9f118aD3aE4469807",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 389
+        },
+        {
+          "name": "BNB-BUSD Worker",
+          "address": "0x48FB86C1b815a2FA7C47fa8da4337B17F1569e93",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 252
+        },
+        {
+          "name": "USDT-BUSD Worker",
+          "address": "0x3F8CDeA875cea793aFF6dB1F00b3860E562679E2",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 258
+        },
+        {
+          "name": "USDC-BUSD Worker",
+          "address": "0xFa8fFE2b5d47f78c485fe7673BE23F88bc1397a7",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 283
+        },
+        {
+          "name": "DAI-BUSD Worker",
+          "address": "0xe4eBc65ef85Ca0C3D749097f8291e05166615467",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 282
+        },
+        {
+          "name": "TRX-BUSD Worker",
+          "address": "0xE10FdB63d6e4Add164d216b07533d4C6044f7291",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 442
+        },
+        {
+          "name": "BTT-BUSD Worker",
+          "address": "0xdD22094261D304AA43C1D26A31eAB411E8856342",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 443
+        }
+      ]
+    },
+    {
+      "name": "Interest Bearing WBNB",
+      "symbol": "ibBNB",
+      "address": "0xcc1477f75872876673Fbdf6829Cd89dfe9455956",
+      "debtToken": "0x57dA3b0A8EDDD4CE8B5b8c1C25C4AC80F1d10FDE",
+      "config": "0xb259C8E25c04403700B3b4c3c0f95E9db6C8b03A",
+      "tripleSlopeModel": "0x8324f1d77571977d202268E0153f9908fCfA6062",
+      "StrategyAddTwoSidesOptimal": "0x96a455917191FbB92919986d8DFd165137144f98",
+      "workers": [
+        {
+          "name": "CAKE-BNB Worker",
+          "address": "0x63EE6659ee478a968815DB9623c97A4C9cCD1fE7",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 251
+        },
+        {
+          "name": "BUSD-BNB Worker",
+          "address": "0x4ac32e851708139d58a3bfb9af35095e8d0d6709",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 252
+        },
+        {
+          "name": "USDT-BNB Worker",
+          "address": "0x6599d4e36f3F13Ea36FF913D31B3bD4D5bB1835C",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 264
+        },
+        {
+          "name": "ETH-BNB Worker",
+          "address": "0xD92615C21FE2d4daF602e30C7695e6a0d217190D",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 261
+        },
+        {
+          "name": "BTCB-BNB Worker",
+          "address": "0xA82A626a3008dB2c641d093dC4cDCaefd4bF15Ee",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 262
+        },
+        {
+          "name": "DOT-BNB Worker",
+          "address": "0x92faB5a74b5923b6c79cc52e45D5501Cc5d81Af3",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 255
+        },
+        {
+          "name": "ADA-BNB Worker",
+          "address": "0x4cFefA8684057b61c480c1a48044E292AFa386EE",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 253
+        },
+        {
+          "name": "UNI-BNB Worker",
+          "address": "0x799b67f969C4FD2Ea40be12cbdCABfB46711996b",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 268
+        },
+        {
+          "name": "LINK-BNB Worker",
+          "address": "0x03ac68fe3179727329A7B1770422dC290486b37D",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 257
+        },
+        {
+          "name": "XVS-BNB Worker",
+          "address": "0x7a813DFaCCF1aA9c3f5a8a25B79cC1FC6C53dd57",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 260
+        },
+        {
+          "name": "DOT-BNB Worker",
+          "address": "0x0cFb15CF2b1E28f2569D500038EC2f137D45b085",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 255
+        },
+        {
+          "name": "AXS-BNB Worker",
+          "address": "0x3De7Dc76A676e223226AE1F6e2FDdaba42406776",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 430
+        },
+        {
+          "name": "DODO-BNB Worker",
+          "address": "0x4f0c81bb25EE2C589DdA79BD46B11D96F7a6A114",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 305
+        }
+      ],
+      "baseToken": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
+    },
+    {
+      "name": "Interest Bearing USDT",
+      "symbol": "ibUSDT",
+      "address": "0xbD91429B7546AFe01c2CC4a4587bBB2E66302534",
+      "debtToken": "0x8D9Df54d00146a182283fd8eA52bf462c6d0B193",
+      "config": "0xef4e6708b442dB6094a792cB97FCBF362255a506",
+      "tripleSlopeModel": "0x99aaA89Ecd9a5ECC1aD2a744812C137A9c92C548",
+      "StrategyAddTwoSidesOptimal": "0x3aFEB0e891aEd005abF333B9E07F4962f49950E5",
+      "workers": [
+        {
+          "name": "CAKE-USDT Worker",
+          "address": "0x9CF453e5CeECEdB0A8A2799EabD1557cE93364EE",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 422
+        },
+        {
+          "name": "BNB-USDT Worker",
+          "address": "0x523029282dd05BCD6067bc0abf0Efbb8ED8F9113",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 264
+        },
+        {
+          "name": "BUSD-USDT Worker",
+          "address": "0x5C7629e7DfFa0ac8Bfa27Da713BfA97049fAE8C3",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 258
+        },
+        {
+          "name": "USDC-USDT Worker",
+          "address": "0xDd6E310AF88BdE13AE9a9Fc16BF0A125d927015d",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 423
+        }
+      ],
+      "baseToken": "0x55d398326f99059ff775485246999027b3197955"
+    },
+    {
+      "name": "",
+      "symbol": "ibCAKE",
+      "address": "",
+      "baseToken": "",
+      "debtToken": "",
+      "config": "0x08e9973B84018A93AD3A2858CddeFbCdD87f0e5b",
+      "tripleSlopeModel": "0x8324f1d77571977d202268E0153f9908fCfA6062",
+      "StrategyAddTwoSidesOptimal": "",
+      "workers": []
+    },
+    {
+      "name": "Interest Bearing ETH",
+      "symbol": "ibETH",
+      "address": "0x85549Eac2c801dbD20964F7F6248F9Ed32Bd4efb",
+      "debtToken": "0x9f6BcefEa7c0f53077C7932785E79a0AFDE5ed89",
+      "config": "0xDf71835BFdCc03543adb025273de1b10f6121494",
+      "tripleSlopeModel": "0x99aaA89Ecd9a5ECC1aD2a744812C137A9c92C548",
+      "StrategyAddTwoSidesOptimal": "0xB8CA047B7ce7c8130756a07474233b76902fE4b0",
+      "workers": [
+        {
+          "name": "BNB-ETH Worker",
+          "address": "0x647104089c641D67Dc3965473039d2816F68EdA2",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 261
+        },
+        {
+          "name": "SUSHI-ETH Worker",
+          "address": "0x606b252Df7937bB42f123898DD131707bfa92818",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 306
+        }
+      ],
+      "baseToken": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8"
+    },
+    {
+      "name": "Interest Bearing BTCB",
+      "symbol": "ibBTCB",
+      "address": "0x5E33c3D92310135973A70cb02E24e8a116a20052",
+      "debtToken": "0xADef0dBa9671eb0A63330f35c70Ed1C40E8A9dDd",
+      "config": "0x65Deae7E95C1abCe78AbEDD1e37f86519b3B412e",
+      "tripleSlopeModel": "0x99aaA89Ecd9a5ECC1aD2a744812C137A9c92C548",
+      "StrategyAddTwoSidesOptimal": "0x9C597e3b8650bAF7b986558D8152BFcc5C4cC459",
+      "workers": [
+        {
+          "name": "BNB-BTCB Worker",
+          "address": "0x581Da90cf1E3e78a13Da0dca75591459aF282522",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 262
+        },
+        {
+          "name": "BUSD-BTCB Worker",
+          "address": "0xd23825DbEA329a398E0100db9903C10530B33654",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 365
+        }
+      ],
+      "baseToken": "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c"
+    },
+    {
+      "name": "",
+      "symbol": "ibUSDC",
+      "address": "0xe363355790cfC313F5aB1939155356e72bf662Fb",
+      "debtToken": "0x2A81f574AE37A8f5D534746dC24Ae91Af7f5b9D7",
+      "config": "0xF0D6682Bf0A1089dAfF72151dBD3DCae7355b96C",
+      "tripleSlopeModel": "0x99aaA89Ecd9a5ECC1aD2a744812C137A9c92C548",
+      "StrategyAddTwoSidesOptimal": "0xC8F82aE24289B0144224A9317933d7A2aE1caEe5",
+      "workers": [
+        {
+          "name": "BUSD-USDC Worker",
+          "address": "0x5Ee735B9e6E085F34777060ecEb645a92248DA4E",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 283
+        },
+        {
+          "name": "USDT-USDC Worker",
+          "address": "0xdc822cb4334a8C27dDc6B392a985fC3395c30e1E",
+          "config": "0x814009F444570ed2915a223e2cAcf955266048c9",
+          "pId": 423
+        }
+      ],
+      "baseToken": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d"
+    }
+  ]
+}
