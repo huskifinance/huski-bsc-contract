@@ -232,7 +232,7 @@
     }
   },
   "Tokens": {
-    "HUSKY": "0x8fC25dffbE250b5c17e9e3439f167bc03DBB4E2f",
+    "HUSKI": "0x8fC25dffbE250b5c17e9e3439f167bc03DBB4E2f",
     "WBNB": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
     "ALPACA": "0x8F0528cE5eF7B51152A59745bEfDD91D97091d2F",
     "sALPACA": "0x6F695Bd5FFD25149176629f8491A5099426Ce7a7",
@@ -284,11 +284,6 @@
     "MBOX": "0x3203c9e46ca618c8c1ce5dc67e7e9d75f5da2377",
     "MDX": "0x9c65ab58d8d978db963e63f2bfb7121627e3a739",
     "DVI": "0x758fb037a375f17c7e195cc634d77da4f554255b"
-  },
-  "LpTokens": {
-    "HUSKY-WBNB": "",
-    "HUSKY-WBNB (Legacy)": "",
-    "sHUSKY-HUSKY": ""
   },
   "SharedStrategies": {
     "StrategyAddBaseTokenOnly": "0x7F7B586fEb621b4E27aF8613E6711ccE8c35c723",
