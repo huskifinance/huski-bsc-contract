@@ -17,6 +17,7 @@ contract PublicOffering is ReentrancyGuardUpgradeSafe, OwnableUpgradeSafe {
   PublicOfferingConfig internal config;
 
   mapping(address => uint256) public investorBalanceOf;
+  mapping(bytes4 => uint256) public numberOfInvitations;
   bool publicOfferingClosed = false;
   address token;
 
@@ -72,6 +73,7 @@ contract PublicOffering is ReentrancyGuardUpgradeSafe, OwnableUpgradeSafe {
     investors.push(x);
     config.addInvestor(msg.sender);
     config.addRaisedAmount(amount);
+    numberOfInvitations[_inviterCode]++;
     investorBalanceOf[msg.sender] = amount;
   }
 
@@ -115,7 +117,7 @@ contract PublicOffering is ReentrancyGuardUpgradeSafe, OwnableUpgradeSafe {
     return price.mul(_value).div(1e8);
   }
 
-  function getInvestors() external view onlyOwner returns (Investor[] memory) {
+  function getInvestors() external view returns (Investor[] memory) {
     return investors;
   }
 
@@ -142,8 +144,21 @@ contract PublicOffering is ReentrancyGuardUpgradeSafe, OwnableUpgradeSafe {
     publicOfferingClosed = set;
   }
 
-  function getCode() public view returns (bytes4) {
-    bytes4 code = bytes4(keccak256(abi.encodePacked(msg.sender)));
+  function getCode(address account) public view returns (bytes4) {
+    bytes4 code = bytes4(keccak256(abi.encodePacked(account)));
     return code;
+  }
+
+  function getInvitees(address account) public view returns (Investor[] memory) {
+    uint256 n = 0;
+    bytes4 code = bytes4(keccak256(abi.encodePacked(account)));
+    Investor[] memory invitees = new Investor[](numberOfInvitations[code]);
+    for (uint256 i = 0; i < investors.length; i++) {
+      if (code == investors[i].inviterCode) {
+        invitees[n] = investors[i];
+        n++;
+      }
+    }
+    return invitees;
   }
 }

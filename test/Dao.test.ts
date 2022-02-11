@@ -92,7 +92,7 @@ describe("Public Offering",() => {
             await configs.setPublicOffering(publicOffering.address,true);
             await usdtTokenAlice.approve(publicOffering.address,ethers.utils.parseEther('10000'))
             let latestPriceData = await publicOffering.getPrice();
-            let inviteCode = await publicOffering.getCode();
+            let inviteCode = await publicOffering.getCode(await deployer.getAddress());
 
             await publicOfferingAlice.deposit(ethers.utils.parseEther('1000'),latestPriceData[1],inviteCode)
 
@@ -120,7 +120,7 @@ describe("Public Offering",() => {
             await configs.setPublicOffering(publicOffering.address,true);
             await usdtTokenAlice.approve(publicOffering.address,ethers.utils.parseEther('10000'))
             let latestPriceData = await publicOffering.getPrice();
-            let inviteCode = await publicOffering.getCode();
+            let inviteCode = await publicOffering.getCode(await deployer.getAddress());
 
             await expect(publicOfferingAlice.deposit(ethers.utils.parseEther('200'),latestPriceData[1],inviteCode)).to.be.revertedWith("PublicOffering::deposit:The investment amount is less than minInvestment")
             expect(await usdtToken.balanceOf(await alice.getAddress())).to.be.bignumber.eq(ethers.utils.parseEther('100000'))
@@ -145,9 +145,9 @@ describe("Public Offering",() => {
         it('token withdraw and InvestorData', async () => {
             await configs.setPublicOffering(publicOffering.address,true);
             let latestPriceData = await publicOffering.getPrice();
-            let inviteCode = await publicOffering.getCode();
-            let invitedCodeAlice = await publicOfferingAlice.getCode();
-            let invitedCodeBob = await publicOfferingBob.getCode();
+            let inviteCode = await publicOffering.getCode(await deployer.getAddress());
+            let invitedCodeAlice = await publicOfferingAlice.getCode(await alice.getAddress());
+            let invitedCodeBob = await publicOfferingBob.getCode(await bob.getAddress());
 
 
             await usdtTokenAlice.approve(publicOffering.address,ethers.utils.parseEther('10000'))
@@ -184,11 +184,16 @@ describe("Public Offering",() => {
             expect(investors[2]["1"]).to.be.eq(invitedCodeBob);
             expect(investors[2]["2"]).to.be.eq(latestPriceData[0].mul(ethers.utils.parseEther('3000')).div(1e8));
 
+            let invitees = await publicOffering.getInvitees(await alice.getAddress());
+
+            expect(invitees[0]["0"]).to.be.eq(await bob.getAddress());
+            expect(invitees[0]["1"]).to.be.eq(invitedCodeAlice);
+            expect(invitees[0]["2"]).to.be.eq(latestPriceData[0].mul(ethers.utils.parseEther('2000')).div(1e8));
         });
         it('Eth deposit and withdraw ', async () => {
             await configs.setPublicOffering(publicOfferingEthAlice.address,true);
             let latestPriceData = await publicOfferingEthAlice.getPrice();
-            let inviteCode = await publicOffering.getCode();
+            let inviteCode = await publicOffering.getCode(await deployer.getAddress());
 
             await publicOfferingEthAlice.deposit(ethers.utils.parseEther('1000'),latestPriceData[1],inviteCode,{value: ethers.utils.parseEther('1000')});
 
@@ -206,8 +211,6 @@ describe("Public Offering",() => {
             expect(investors[0]["1"]).to.be.eq(inviteCode);
             expect(investors[0]["2"]).to.be.bignumber.eq(latestPriceData[0].mul(ethers.utils.parseEther('1000')).div(1e8));
         });
-
-
     })
 
 })
