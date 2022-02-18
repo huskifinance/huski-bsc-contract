@@ -63,8 +63,6 @@ contract PublicOffering is ReentrancyGuardUpgradeSafe, OwnableUpgradeSafe {
     require(amount >= minInvestment, "PublicOffering::deposit:The investment amount is less than minInvestment");
     if (msg.value != 0) {
       require(_value == msg.value, "PublicOffering::deposit:value != msg.value");
-      (bool sent, bytes memory data) = address(this).call{ value: msg.value }("");
-      require(sent, "PublicOffering::deposit:Failed to send Ether");
     } else {
       require(token != address(0), "PublicOffering::deposit:token == address(0)");
       SafeToken.safeTransferFrom(token, msg.sender, address(this), _value);
