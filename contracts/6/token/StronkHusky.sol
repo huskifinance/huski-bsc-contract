@@ -150,17 +150,17 @@ contract StronkHusky is ERC20UpgradeSafe, ReentrancyGuardUpgradeSafe, OwnableUpg
 
   // View function to see pending HUSKYs on frontend.
   function pendingHusky(address owner) external view returns (uint256) {
-    uint256 pendingHusky;
+    uint256 pendingHuskyAmount;
     uint256 positionCount = _holderPositions[owner].length();
     for (uint256 i = 0; i < positionCount; i++) {
       Position storage pos;
       uint256 id = _holderPositions[owner].at(i);
       pos = positions[id];
       uint256 multiplier = getMultiplier(pos.lastRewardBlock, block.number);
-      pendingHusky += multiplier.mul(pos.hodlAmount).mul(lockUpInterestBps).div(10000);
+      pendingHuskyAmount += multiplier.mul(pos.hodlAmount).mul(lockUpInterestBps).div(10000);
     }
 
-    return pendingHusky;
+    return pendingHuskyAmount;
   }
 
   // Harvest HUSKYs earn from the pool.

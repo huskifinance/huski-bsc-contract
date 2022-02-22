@@ -52,7 +52,7 @@ contract PublicOffering is ReentrancyGuardUpgradeSafe, OwnableUpgradeSafe {
     bytes4 _inviterCode
   ) external payable nonReentrant {
     (uint256 fundingGoal, uint256 minInvestment, uint256 maxInvestment, uint256 raisedAmount) = config.getConfig();
-    uint256 amount = _tokenToUSD(_value, _roundID);
+    uint256 amount = tokenToUSD(_value, _roundID);
     require(!publicOfferingClosed, "PublicOffering::deposit:Public offering closed");
     require(!config.getInvestorStatus(msg.sender), "PublicOffering::deposit:User has invested");
     require(
@@ -110,7 +110,7 @@ contract PublicOffering is ReentrancyGuardUpgradeSafe, OwnableUpgradeSafe {
     return (uint256(price), roundID, startedAt, timeStamp, answeredInRound);
   }
 
-  function _tokenToUSD(uint256 _value, uint80 _roundID) internal returns (uint256) {
+  function tokenToUSD(uint256 _value, uint80 _roundID) public view returns (uint256) {
     (uint256 price, , , , ) = getRoundData(_roundID);
     return price.mul(_value).div(1e8);
   }
@@ -121,7 +121,7 @@ contract PublicOffering is ReentrancyGuardUpgradeSafe, OwnableUpgradeSafe {
 
   function withdraw(uint256 amount) external onlyOwner {
     if (token == address(0)) {
-      (bool sent, bytes memory data) = msg.sender.call{ value: amount }("");
+      (bool sent, ) = msg.sender.call{ value: amount }("");
       require(sent, "PublicOffering::withdraw:Failed to send Ether");
     } else {
       SafeToken.safeTransfer(token, msg.sender, amount);
@@ -130,7 +130,7 @@ contract PublicOffering is ReentrancyGuardUpgradeSafe, OwnableUpgradeSafe {
 
   function emergencyWithdraw() external onlyOwner {
     if (token == address(0)) {
-      (bool sent, bytes memory data) = msg.sender.call{ value: address(this).balance }("");
+      (bool sent, ) = msg.sender.call{ value: address(this).balance }("");
       require(sent, "PublicOffering::emergencyWithdraw:Failed to send Ether");
     } else {
       uint256 amount = SafeToken.balanceOf(token, address(this));
@@ -142,7 +142,7 @@ contract PublicOffering is ReentrancyGuardUpgradeSafe, OwnableUpgradeSafe {
     publicOfferingClosed = set;
   }
 
-  function getCode(address account) public view returns (bytes4) {
+  function getCode(address account) public pure returns (bytes4) {
     bytes4 code = bytes4(keccak256(abi.encodePacked(account)));
     return code;
   }
