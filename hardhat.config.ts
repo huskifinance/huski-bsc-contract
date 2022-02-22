@@ -34,6 +34,11 @@ module.exports = {
       hdSigner: 'trezor',
       address: '0x3583Fa30Dd165B339f34B965CA25B58470C5e343',
     },
+    kovan: {
+      url: 'https://kovan.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161',
+      chainId: 42,
+      accounts: [process.env.KOVAN_PRIVATE_KEY],
+    },
   },
   namedAccounts: {
     deployer: {
